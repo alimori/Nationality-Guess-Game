@@ -1,0 +1,14 @@
+<div class="content bordered" role="main">
+    <div class="box top-left" (click)="selectNationality(nationalityEnum.KOREAN)">Koeran</div>
+    <div class="box top-right" (click)="selectNationality(nationalityEnum.JAPANESE)">Japanese</div>
+    <div class="box bottom-left" (click)="selectNationality(nationalityEnum.CHINESE)">Chinese</div>
+    <div class="box bottom-right" (click)="selectNationality(nationalityEnum.THAI)">Thai</div>
+    <div *ngFor="let person of persons">
+        <app-enter-exit [person]="person"></app-enter-exit>
+    </div>
+    <h1 *ngIf="seconds > 0" class="text-danger text-bold">{{seconds}}</h1>
+</div>
+<footer class="footer">
+    <span class="text-bold" [ngClass]="{'text-success': score > 0, 'text-danger': 0 > score}">Your score is:
+        {{score}}</span>
+</footer>

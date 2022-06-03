@@ -1,0 +1,22 @@
+.image-container{
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+}
+
+:host {
+    display: block;
+  }
+  
+  .image-container {
+    border: 1px solid #dddddd;
+    margin-top: -2rem;
+    width: 175px;
+    height: 175px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+  }

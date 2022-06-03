@@ -1,0 +1,9 @@
+<div class="content" role="main">
+    <P *ngIf="gameDone" class="score">Your score is: {{score}}</P>
+    <br *ngIf="gameDone"/>
+    <br *ngIf="gameDone"/>
+    <button class="btn btn-primary" (click)="startGame()">Start Game</button>
+</div>
+<footer class="footer">
+    <span class="text-muted">Natioanality Guess Game (Version 1.0.0)</span>
+</footer>

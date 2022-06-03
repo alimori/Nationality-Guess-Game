@@ -1,0 +1,156 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:0;
+}
+
+p {
+    margin: 0;
+}
+ 
+//layout
+.content {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+    box-sizing: border-box;
+}
+
+.box {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background-color: #dddddd;
+}
+
+.footer{
+    display: flex;
+    margin: 0 auto;
+    max-width: 960px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+}
+
+//positions
+.top-left{
+    position: absolute;
+    top:0;
+    left:0
+}
+
+.top-right{
+    position: absolute;
+    top:0;
+    right:0
+}
+
+.bottom-left{
+    position: absolute;
+    bottom:0;
+    left:0
+}
+
+.bottom-right{
+    position: absolute;
+    bottom:0;
+    right:0
+}
+
+.bottom-center{
+    position: absolute;
+    bottom:0;
+}
+
+//
+.score{
+    color: red;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.bordered{
+    border: 1px solid #eeeeee;
+}
+
+//btn
+.btn{
+    display: block;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    min-width: 10rem;
+    text-decoration: none;
+
+    &.btn-primary {
+        background-color: cornflowerblue;
+        border: 1px solid cornflowerblue;
+        color: white;
+
+        &:hover{ 
+            opacity:0.8;
+         }
+    }   
+}
+
+//text
+.text-danger{
+    color: red;
+}
+
+.text-success{
+    color: green;
+}
+
+.text-muted{
+    color: #888888;
+}
+
+.text-bold{
+    font-weight: 600;
+}
+
+
+//spacing
+.m-10{
+    margin: 1rem;
+}
+.my-10{
+    margin: 1rem 0;
+}
+.mx-10{
+    margin: 0 1rem;
+}
+
+
+
